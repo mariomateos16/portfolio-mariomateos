@@ -13,6 +13,7 @@
     <!-- ESTILOS -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
     <!-- JS -->
     <script src="assets/js/app.js"></script>
@@ -137,7 +138,7 @@
                 <main class="about__experiences">
                     <div class="experiences__container">
                         <h2 class="experiences__title">Experiencia laboral</h2>
-                        <i class="experiences__icon fa-solid fa-briefcase "></i>
+                        <i class="experiences__icon fa-solid fa-briefcase"></i>
                     </div>  
 
                     <div class="experience__group">
@@ -175,6 +176,7 @@
                 
                 <div class="skills__tecnologies">
                         <h1 class="skills__title"><span>Habilidades</span></h1>
+                        <h2 class="skills__subtitle">Tecnologias con las que trabajo y tengo cononimientos.</h2>
                     <div class="skills__container-image">
                         <a href="#" class="skills__link-image">
                             <img src="assets/img/html.png" class="skill__img">
@@ -210,19 +212,88 @@
 
         <!-- PROYECTOS -->
         <section class="layout__projects">
-
+            <header class="projects__header">
+                <h1 class="projects__title">Portfolio</h1>
+            </header>
+            <h2 class="projects__subtitle">Estos son algunos de mis proyectos hechos con mucho cariño</h2>
             <div class="projects__container">
+                <div class="projects__box">
+                    <img src="assets/img/webseo.png" alt="" class="projects__img">
 
+                    <div class="project__layer">
+                        <h3 class="project__title">Web SEO</h3>
+                        <p class="project__description">Una página web ficticia de lo que sería una agencia seo en el cuál tiene muchas secciones, efectos, y es totalmente resposiva</p>
+                        <div class="project__icons">    
+                            <a href="https://web-seo-mariomateosweb.netlify.app/" target="_blank" class="project__icon-link">
+                                <i class="project__icon fa-solid fa-external-link"></i>
+                            </a>
+                            <a href="https://github.com/mariomateos16/webSEO" target="_blank" class="project__icon-link">
+                                <i class="project__icon fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects__box">
+                    <img src="assets/img/webgamer.png" alt="" class="projects__img">
+
+                    <div class="project__layer">
+                        <h3 class="project__title">Web GAMER</h3>
+                        <p class="project__description">Una maquetación web ficticia de lo que sería una página web dedicada a los videojuegos</p>
+                        <div class="project__icons">
+                            <a href="https://web-gamer-mariomateosweb.netlify.app/" target="_blank" class="project__icon-link">
+                                <i class="project__icon fa-solid fa-external-link"></i>
+                            </a>
+                            <a href="https://github.com/mariomateos16/web-gamer" target="_blank" class="project__icon-link">
+                                <i class="project__icon fa-brands fa-github"></i>
+                            </a>
+                        </div>                            
+                    </div>
+                </div>
+
+                <div class="projects__box">
+                    <img src="assets/img/webportfolio.png" alt="" class="projects__img">
+
+                    <div class="project__layer">
+                        <h3 class="project__title">Portafolio Senior</h3>
+                        <p class="project__description">Un portafolio para aquellos programadores que ya tienen mucha experiencia, ya sea clientes, cursos, canal de yt....</p>
+                        <div class="project__icons">
+                            <a href="https://portfolio-senior-mariomateosweb.netlify.app/" target="_blank" class="project__icon-link">
+                                <i class="project__icon fa-solid fa-external-link"></i>
+                            </a>
+                            <a href="https://github.com/mariomateos16/portfolio-senior" target="_blank" class="project__icon-link">
+                                <i class="project__icon fa-brands fa-github"></i>
+                            </a>
+                        </div>    
+                    </div>
+                </div>
+
+                <div class="projects__box">
+                    <img src="assets/img/appfutbolistas.png" alt="" class="projects__img">
+
+                    <div class="project__layer">
+                        <h3 class="project__title">App Móvil Fubtolistas</h3>
+                        <p class="project__description">Un aplicación web móvil hecha con Ionic Angular el cuál puedes añadir o eliminar jugadores que están almacenados en una base de datos que es Firebase</p>
+                        <div class="project__icons">
+                            <a href="https://app-futbolistasbbva-mariomateosweb.netlify.app/" target="_blank" class="project__icon-link">
+                                <i class="project__icon fa-solid fa-external-link"></i>
+                            </a>
+                            <a href="https://github.com/mariomateos16/AppFutbolistas" target="_blank" class="project__icon-link">
+                                <i class="project__icon fa-brands fa-github"></i>
+                            </a>
+                        </div>    
+                    </div>
+                </div>                
             </div>
-
         </section>
 
         <!-- CONTACTOS -->
         <section class="layout__contact">
 
-            <main class="contact__header">
-
-                <h1 class="contact__title">Contacto</h1>
+            <main class="contact__main">
+                <div class="contact__header">
+                    <h1 class="contact__title">Contacto</h1>
+                </div>
                 <h2 class="contact__subtitle">No dudes en contactar conmigo si tienes alguna duda o propuesta.</h2>
 
                 <div class="contact-container">
@@ -272,8 +343,6 @@
                 </div>
               </div>
         </footer>
-
     </div>
-
 </body>
 </html>
