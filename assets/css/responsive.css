@@ -396,4 +396,10 @@
         max-width: 300px;
     }
 
+    .contact__description {
+        font-size: 0.9rem;
+        white-space: wrap;
+        margin-left: -2rem;
+    }
+
 }
