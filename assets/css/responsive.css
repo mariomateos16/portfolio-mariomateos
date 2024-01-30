@@ -292,7 +292,7 @@
     }
 
     .skills__subtitle {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
 }
@@ -311,9 +311,13 @@
         max-width: 370px;
     }
 
+    .skills__title span {
+        font-size: 5rem;
+    }
+
     .skills__subtitle {
-        font-size: 1.3rem;
-        white-space: nowrap;
+        font-size: 1.1rem;
+        white-space: wrap;
     }
 
     .contact__description {
@@ -354,8 +358,42 @@
     }
 
     .skills__subtitle {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         white-space: wrap;
+    }
+
+    .contact__description {
+        font-size: 1rem;
+        white-space: wrap;
+        margin-left: -3rem;
+        
+    }
+
+    .contact__number {
+        font-size: 1.5rem;
+        white-space: nowrap;
+        margin-left: -1rem;
+    }
+
+    .footer-icons {
+        gap: 1rem;
+    }
+
+    .footer__icon {
+        font-size: 1.5rem;
+    }
+
+    .footer__description {
+        margin-top: 0.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+
+    .projects__box {
+        max-width: 300px;
     }
 
 }
