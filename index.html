@@ -24,44 +24,41 @@
     <!-- LAYOUT -->
     <div class="layout">
 
-        <!-- NAVBAR -->
-        <section class="layout__menu">
-            <header class="menu__navbar">
+        <header class="layout__header">
+            <div class="logo">
+                <a href="#" class="navbar__logo-link">
+                    <img src="./assets/img/logo.jpg" class="navbar__logo-img">
+                </a>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Inicio</a>
+                    </li>
 
-                <!-- LOGO -->
-                <div class="navbar__logo">
-                    <a href="#" class="navbar__logo-link">
-                        <img src="./assets/img/logo3.jpg" class="navbar__logo-img">
-                    </a>
-                </div>
+                    <li class="nav__item">
+                        <a href="#" class="nav__title" id="link-about">Sobre mí</a>
+                    </li>
 
-                <!-- NAVEGACIÓN -->
-                <nav class="navbar__nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#" class="nav__title">Inicio</a>
-                        </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__title" id="link-skills">Habilidades</a>
+                    </li>
 
-                        <li class="nav__item">
-                            <a href="#" class="nav__title">Sobre mí</a>
-                        </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__title" id="link-projects">Proyectos</a>
+                    </li>
 
-                        <li class="nav__item">
-                            <a href="#" class="nav__title">Habilidades</a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#" class="nav__title">Proyectos</a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#" class="nav__title">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-
-            </header>
-        </section>
+                    <li class="nav__item">
+                        <a href="#" class="nav__title" id="link-contact">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
         <!-- INICIO -->
         <section class="layout__home">
@@ -69,7 +66,7 @@
             <div class="home__content">
                 <h1 class="home__h1">HOLA!, Soy <span class="home__span">Mario Mateos</span>, <br> Desarrollador Frontend</h1>
                 <p class="home__description">
-                    Soy un joven programador junior al cual le apasiona el mundo de la programación <br> 
+                    Soy un joven programador junior al cual le apasiona el mundo de la programación 
                     y que no para de aprender y de crecer.
                 </p>
             </div>
@@ -80,8 +77,8 @@
 
         </section>
 
-        <!-- HABILIDADES -->
-        <section class="layout__about">
+        <!-- SOBRE MI -->
+        <section class="layout__about" id="about"> 
 
             <header class="about__header">
                 <h1 class="about__header-h1"> Sobre Mí</h1>
@@ -96,14 +93,10 @@
                     </div>
 
                     <div class="certificate__group">
-                        <div class="certificate__container">
-                            <h3 class="certificate__title">IES NUESTRA SEÑORA DE LOS REMEDIOS</h3>
-                            <h4 class="certificate__description">Bachillerato en ciencias sociales <br> Septiembre 2018 - Junio 2020</h4>
-                        </div>
 
                         <div class="certificate__container">
                             <h3 class="certificate__title">IES NUESTRA SEÑORA DE LOS REMEDIOS</h3>
-                            <h4 class="certificate__description">Bachillerato en ciencias sociales <br> Septiembre 2018 - Junio 2020</h4>
+                            <h4 class="certificate__description">FP Superior Desarrollo de Apliaciones Web (DAW)<br> Noviembre 2020 - Junio 2023</h4>
                         </div>
 
                         <div class="certificate__container">
@@ -142,15 +135,7 @@
                     </div>  
 
                     <div class="experience__group">
-                        <div class="experience__container">
-                            <h3 class="experience__job">Auxiliar de tienda</h3>
-                            <h4 class="experience__data">Telepizza, Food Delivery Brands Group, S.A. <br>
-                                                        Diciembre 2021 - Junio 2023</h4>
-                            <p class="experience__description">
-                                - Elaboración de las pizzas u otras comidas. <br>
-                                - Atender en caja y llamadas telefónicas.
-                            </p>
-                        </div>
+                        
 
                         <div class="experience__container">
                             <h3 class="experience__job">Desarrollador web</h3>
@@ -169,14 +154,14 @@
         </section>
  
         <!-- HABILIDADES -->
-        <section class="layout__skills">
+        <section class="layout__skills" id="skills">
 
             <div class="skills__container">
                 <img src="assets/img/Static website-amico.png" class="skills__img">
                 
                 <div class="skills__tecnologies">
                         <h1 class="skills__title"><span>Habilidades</span></h1>
-                        <h2 class="skills__subtitle">Tecnologias con las que trabajo y tengo cononimientos.</h2>
+                        <h2 class="skills__subtitle">Tecnologías con las que trabajo y tengo cononimientos.</h2>
                     <div class="skills__container-image">
                         <a href="#" class="skills__link-image">
                             <img src="assets/img/html.png" class="skill__img">
@@ -190,8 +175,6 @@
                         <a href="#" class="skills__link-image">
                             <img src="assets/img/bootstrap.png" class="skill__img">
                         </a>
-                    </div>
-                    <div class="skills__container-image">
                         <a href="#" class="skills__link-image">
                             <img src="assets/img/angular.png" class="skill__img">
                         </a>
@@ -211,7 +194,7 @@
         </section>
 
         <!-- PROYECTOS -->
-        <section class="layout__projects">
+        <section class="layout__projects" id="projects">
             <header class="projects__header">
                 <h1 class="projects__title">Portfolio</h1>
             </header>
@@ -288,7 +271,7 @@
         </section>
 
         <!-- CONTACTOS -->
-        <section class="layout__contact">
+        <section class="layout__contact" id="contact">
 
             <main class="contact__main">
                 <div class="contact__header">
