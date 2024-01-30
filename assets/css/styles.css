@@ -33,56 +33,40 @@ body{
 
 
 /* ESTILOS CABECERA */
-
-.layout__menu {
+header {
     width: 100%;
-    height: 10rem;    
+    height: 11rem;
     background-color: var(--color-secondary);
-    width: 100%;
-}
-
-.menu__navbar {
-    height: 100%;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    padding: 0 100px;
 }
-
-.navbar__logo {
-    display: block;
-    flex-basis: 70%;
-}
-
 .navbar__logo-link{
     width: 80px;
-    height: 80px;
-    margin-left: 5rem;
-    margin-top: 0.8rem;
-    
-}
-.navbar__nav {
-    display: block;
-    flex-basis: 30%;
+    height: 80px;  
 }
 
-.nav__list {
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
     display: flex;
-    flex-direction: row;
-    gap: 4rem;
-    padding: 3rem;
-} 
+}
 
-.nav__title {
+.nav-bar ul li a {
+    display: block;
     color: var(--color-principal);
     font-size: 2rem;
-    white-space: nowrap;
-    transition: all 200ms ease-in-out;
-    border-bottom: 3px solid transparent;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    transition: all 200ms ease-out;
+    margin: 0 5px;
 }
 
-.nav__item:hover .nav__title {
-    color: var(--color-tertiary);
-    border-bottom: 3px solid var(--color-tertiary);
+.nav-bar ul li a:hover {
+    background-color: var(--color-tertiary);
 }
 
 .nav__item {
@@ -90,6 +74,7 @@ body{
     transform: translateX(50px); 
     transition: opacity 0.5s, transform 0.5s;
 }
+ 
 
 @keyframes fadeInRight {
     from {
@@ -120,7 +105,7 @@ body{
 
 .nav__item:nth-child(5) {
     animation: fadeInRight 0.5s ease-out 0.5s forwards;
-}
+} 
 
 
 /* ESTILOS INICIO */
@@ -218,7 +203,7 @@ body{
     display: flex;
     text-align: center;
     justify-content: center;
-    padding: 2.5rem;
+    padding-top: 2.5rem;
 }
 
 .about__header-h1,
@@ -247,6 +232,7 @@ body{
     color: var(--color-principal);
     font-size: 4rem;
     font-weight: 500;
+    transition: all 200ms ease-in;
 }
 
 .certificates__title:hover,
@@ -337,11 +323,10 @@ body{
 }
 
 .skills__img {
-    padding: 4rem 4rem;
-    margin-left: 3rem;
-    margin-right: 10rem;
-    height: 600px;
-    width: 600px;
+    width: 50%; /* Modificado para ocupar el 50% del ancho */
+    height: 700px;
+    width: 700px;
+    padding: 1rem 1rem; /* Ajusta según sea necesario */
 }
 
 .skills__title {
@@ -374,15 +359,18 @@ body{
 }
 
 .skills__tecnologies {
+    width: 50%;
+    flex: 1;
     display: flex;
     flex-direction: column;   
-    padding: 4rem 2rem
+    padding: 4rem 2rem;
+    margin-top: 10rem;
 } 
 
 .skills__container-image {
-    display: flex;
-    flex-direction: row;
-    gap: 8rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
     padding: 3.5rem;
 }
 
@@ -409,11 +397,15 @@ body{
     padding: 2.5rem;
 }
 
+.projects__title {
+    margin-top: 5rem;
+}
+
 .projects__subtitle {
     margin: 0 auto;
     font-size: 2.1rem;
     font-weight: 600;
-    margin-bottom: 4rem;
+    padding: 4.5rem;
     color: var(--color-principal);
     text-align: center;
 }
@@ -633,3 +625,7 @@ body{
 .footer__icon:hover {
     color: var(--color-tertiary);
 }
+
+
+
+
