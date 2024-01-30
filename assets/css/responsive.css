@@ -1,0 +1,361 @@
+@media only screen and (max-width: 1500px) {
+    .home__h1{
+        font-size: 3.8rem;
+    }
+    
+    .home__description {
+        font-size: 1.6rem;
+    }
+
+    .projects__container {
+        padding: 0rem 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 1375px) {
+    .skills__img {
+        height: 650px;
+        width: 650px;
+    }
+}
+
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 5rem;
+    }
+
+    .skills__subtitle {
+        font-size: 1.8rem;
+    }
+
+    .skills__img {
+        height: 600px;
+        width: 600px;
+    }
+
+    .skills__tecnologies {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 1290px) {
+    .home__h1{
+        font-size: 3.8rem;
+    }
+
+    .home__description {
+        font-size: 1.5rem;
+    }
+
+    .home__logo {
+        width: 400px;
+        height: 400px;
+    }
+
+    .skills__tecnologies {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .home__h1{
+        font-size: 3.2rem;
+    }
+
+    .home__description {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .home__logo {
+        width: 375px;
+        height: 375px;
+    }
+
+    .skills__img {
+        height: 500px;
+        width: 500px;
+    }
+
+    .skills__tecnologies {
+        margin-top: 0;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 3rem;
+    }
+
+    .about__container {
+        flex-direction: column;
+    }
+
+    .certificate__group:hover,
+    .experience__group:hover {
+        transform: scale(1.02);
+    }
+
+    .skills__img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .skills__tecnologies {
+        margin-top: 0;
+    }
+
+}
+
+
+@media only screen and (max-width: 1020px) {
+    .projects__container {
+        padding: 0rem 4rem;
+    }
+
+    .skills__subtitle {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 940px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 3rem;
+        height: 0.3rem;
+        background-color: var(--color-principal);
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        background-color: var(--color-secondary);
+        transition: all 500ms ease-in;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 8rem auto 0 auto;
+        text-align: center;
+        transition: all 200ms ease-out;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 1.2rem;
+    }
+
+    .layout__home {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        padding: 3rem 3rem;
+        padding-bottom: 5rem;
+        margin-top: 2rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home__content {
+        margin-top: 1rem;
+    }
+
+    .home__description {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    .home__h1{
+        font-size: 3.5rem;
+    }
+
+    .skills__img {
+        display: none;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact__contright {
+        padding: 2rem 0rem;
+    }
+
+    .contact__contleft {
+        padding: 2rem 0rem;
+    }
+}
+
+@media only screen and (max-width: 800px) { 
+
+    .contact__subtitle {
+        font-size: 1.8rem;
+    }
+
+    .contact__description {
+        font-size: 1.4rem;
+    }
+
+    .contact__number {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 660px) { 
+
+    .contact__description {
+        font-size: 1.3rem;
+        white-space: wrap;
+        margin-left: -2rem;
+        
+    }
+
+    .contact__number {
+        font-size: 1.8rem;
+        white-space: nowrap;
+
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 620px) {
+    .home__h1{
+        font-size: 2.8rem;
+    }
+
+    .home__description {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .home__logo {
+        margin-top: 1rem;
+        width: 300px;
+        height: 300px;
+    }
+
+    .skills__subtitle {
+        font-size: 1.7rem;
+    }
+
+    .projects__subtitle {
+        font-size: 1.8rem;
+    }
+
+    .footer-icons {
+        gap: 2rem;
+    }
+
+    .footer__icon {
+        font-size: 1.8rem;
+    }
+
+    .footer__description {
+        font-size: 1.4rem;
+    }
+    
+}
+
+@media only screen and (max-width: 555px) {
+    
+    .skills__title span {
+        font-size: 6rem;
+    }
+
+    .skills__subtitle {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 450px) {
+    .home__h1{
+        font-size: 2.3rem;
+    }
+
+    .projects__container {
+        padding: 0rem 1rem;
+    }
+
+    .projects__box {
+        max-width: 370px;
+    }
+
+    .skills__subtitle {
+        font-size: 1.3rem;
+        white-space: nowrap;
+    }
+
+    .contact__description {
+        font-size: 1.15rem;
+        white-space: wrap;
+        margin-left: -3rem;
+        
+    }
+
+    .contact__number {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        margin-left: -1rem;
+    }
+
+    .footer-icons {
+        gap: 1.2rem;
+    }
+
+    .footer__icon {
+        font-size: 1.8rem;
+    }
+
+    .footer__description {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media only screen and (max-width: 395px) {
+
+    .projects__container {
+        padding: 0rem 0rem;
+    }
+
+    .projects__box {
+        max-width: 340px;
+    }
+
+    .skills__subtitle {
+        font-size: 1.3rem;
+        white-space: wrap;
+    }
+
+}
