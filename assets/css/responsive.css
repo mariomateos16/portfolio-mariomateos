@@ -367,6 +367,21 @@
     .footer__description {
         font-size: 1.3rem;
     }
+
+    .contact__contright {
+    display: none;
+    }
+
+    .projects__title,
+    .about__header-h1, 
+    .contact__title {
+        font-size: 5.5rem;
+    }
+
+    .certificates__title,
+    .experiences__title {
+        font-size: 3.3rem;
+    }
 }
 
 
