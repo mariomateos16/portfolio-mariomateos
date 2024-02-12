@@ -381,8 +381,13 @@
     }
 
     .skills__subtitle {
-        font-size: 1.1rem;
-        white-space: wrap;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        display: none;
+    }
+
+    .skills__container-image {
+        padding: 2.5rem;
     }
 
     .contact__description {
@@ -423,7 +428,7 @@
     .contact__description {
         font-size: 0.9rem;
         white-space: wrap;
-        margin-left: -4rem;
+        margin-left: -3rem;
     }
 
 }
