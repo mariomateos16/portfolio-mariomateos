@@ -334,16 +334,6 @@
         max-width: 370px;
     }
 
-    .skills__subtitle {
-        font-size: 0.8rem;
-        white-space: nowrap;
-        display: none;
-    }
-
-    .skills__container-image {
-        padding: 2.5rem;
-    }
-    
     .skills__title span {
         font-size: 5rem;
     }
@@ -379,9 +369,10 @@
     }
 
     .contact__contright {
-    display: none;
+        font-size: 0.9rem;
+        white-space: wrap;
     }
-
+    
     .projects__title,
     .about__header-h1, 
     .contact__title {
@@ -391,6 +382,16 @@
     .certificates__title,
     .experiences__title {
         font-size: 3.3rem;
+    }
+
+    .skills__subtitle {
+        font-size: 0.8rem;
+        white-space: nowrap;
+        display: none;
+    }
+
+    .skills__container-image {
+        padding: 2.5rem;
     }
 }
 
@@ -441,10 +442,6 @@
         font-size: 1.2rem;
     }
 
-    .contact__contright {
-        display: none;
-    }
-
     .projects__title,
     .about__header-h1, 
     .contact__title {
@@ -465,7 +462,6 @@
         max-width: 300px;
     }
 
-    
     .contact__description {
         font-size: 0.9rem;
         white-space: wrap;
