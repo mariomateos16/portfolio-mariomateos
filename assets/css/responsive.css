@@ -130,6 +130,11 @@
 
 
 @media only screen and (max-width: 940px) {
+    .layout__header {
+        position: relative;
+        z-index: 99;       
+    }
+    
     .hamburger {
         display: block;
         cursor: pointer;
@@ -165,6 +170,11 @@
         text-align: center;
         transition: all 200ms ease-out;
         opacity: 0;
+    }
+
+    .layout__home {
+        position: relative;
+        z-index: 5;
     }
 
     .nav-bar.active ul {
