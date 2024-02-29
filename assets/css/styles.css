@@ -127,11 +127,10 @@ header {
 .layout__home {
     display: flex;
     flex-direction: row;
-    padding: 8rem 8rem;
-    padding-bottom: 10rem;
-    margin-top: 2.8rem;
+    min-height: 90vh;
     z-index: 99;
     position: relative;
+    align-items: center;
 }
 
 #particles-js {
@@ -145,11 +144,31 @@ header {
 
 .home__content {
     display: block;
-    flex-basis: 60%;
-    margin-top: 8rem;
+    flex-basis: 50%;
+    margin-top: 4rem;
+    margin-left: 10rem;
     position: relative;
-    z-index: -2;
+    z-index: -1;
 }
+
+.home__span:hover {
+    cursor: pointer;
+}
+
+.home__logo {
+    display: block;
+    overflow: hidden;
+    padding: 1rem 1rem;
+    position: relative;
+    z-index: -1;
+}
+
+.home__logo-img {
+    border-radius: 200px;
+    pointer-events: none;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 .home__h1 {
     color: var(--color-secondary);
@@ -158,15 +177,6 @@ header {
     font-weight: 600;
 }
 
-.home__description {
-    color: var(--color-text);
-    font-size: 1.9rem;
-    font-weight: 500;
-    line-height: 2;
-    opacity: 0;
-    transition: opacity 0.5s, transform 0.5s;
-    animation: slideInRight 0.5s ease-out 0.2s forwards;
-}
 
 .home__span {
     color: var(--color-tertiary);
@@ -210,23 +220,70 @@ header {
     }
 }
 
-.home__span:hover {
-    cursor: pointer;
-}
 
-.home__logo {
-    display: block;
-    overflow: hidden;
-    padding: 1rem 1.5rem;
+.socials {
     position: relative;
-    z-index: -1;
-}
+    margin-top: 1rem;
+  }
+  .socials .social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .socials .social-icons li {
+    display: inline-block;
+    margin-bottom: 14px;
+  }
+  .social-icons a {
+    font-size: 2rem;
+    display: inline-block;
+    line-height: 44px;
+    color: var(--color-principal);
+    background-color: var(--color-secondary);
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
 
-.home__logo-img {
-    border-radius: 200px;
-    pointer-events: none;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
-}
+  .social-icons a:hover,
+  .social-icons a.github:hover,
+  .social-icons a.twitter:hover,
+  .social-icons a.linkedin:hover,
+  .social-icons a.instagram:hover {
+    color: var(--color-principal);
+    background-color: var(--color-tertiary);
+  }
+
+  .home__content .btn {
+    width: max-content;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+    line-height: 0;
+    padding: 1.6rem 3rem;
+    border-radius: 4em;
+    transition: 0.5s;
+    color: #fff;
+    background: var(--color-tertiary);
+    box-shadow: 0px 5px 18px rgba(0, 129, 101, 0.6);
+    font-family: "Nunito", sans-serif;
+  }
+
+  .home__content .btn i {
+    margin-left: 0.3rem;
+    font-size: 1.5rem;
+    transition: 0.3s;
+  }
+  .home__content .btn:hover {
+    background: #007a6a;
+  }
+  .home__content .btn:hover i {
+    transform: translateX(5px);
+  }
 
 
 /* ESTILOS SOBRE MI */
@@ -464,7 +521,7 @@ header {
 
 .projects__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
     grid-gap: 20px;
 }
 
@@ -693,3 +750,4 @@ header {
 .footer__icon:hover {
     color: var(--color-tertiary);
 }
+
