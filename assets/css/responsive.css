@@ -27,7 +27,14 @@
 
     .home__content {
         margin-left: 15rem;
+    }
 
+    .skills__link-image {
+        margin-left: 0rem;
+    }
+
+    .projects__container {
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
     }
 }
 
