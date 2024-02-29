@@ -437,6 +437,10 @@ header {
     padding: 1rem 1rem; 
 }
 
+.skills__link-image {
+    margin-left: 10rem;
+}
+
 .skills__title {
     display: block;
     text-align: center;
@@ -521,7 +525,7 @@ header {
 
 .projects__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(475px, 1fr));
     grid-gap: 20px;
 }
 
@@ -750,4 +754,3 @@ header {
 .footer__icon:hover {
     color: var(--color-tertiary);
 }
-
