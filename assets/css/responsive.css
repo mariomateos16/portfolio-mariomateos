@@ -1,14 +1,33 @@
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1950px) {
+    .home__content {
+        flex-basis: 50%;
+        margin-top: 4rem;
+        margin-left: 20rem;
+    }
+
+    .home__h1{
+        font-size: 5rem;
+    }
+
+    .home__span {
+        font-size: 5.5rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 1540px) {
     .home__h1{
         font-size: 3.8rem;
-    }
-    
-    .home__description {
-        font-size: 1.6rem;
     }
 
     .projects__container {
         padding: 0rem 2.5rem;
+    }
+
+    .home__content {
+        margin-left: 15rem;
+
     }
 }
 
@@ -111,7 +130,6 @@
 
 }
 
-
 @media only screen and (max-width: 1020px) {
 
     .certificate__container, .experience__container {
@@ -134,7 +152,12 @@
         position: relative;
         z-index: 99;       
     }
-    
+
+    .home__content .btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+     
     .hamburger {
         display: block;
         cursor: pointer;
@@ -198,6 +221,7 @@
 
     .home__content {
         margin-top: 1rem;
+        margin-left: 0rem;
     }
 
     .home__description {
@@ -312,10 +336,23 @@
 
 }
 
-
 @media only screen and (max-width: 450px) {
     .home__h1{
         font-size: 2.3rem;
+    }
+
+    .home__content .btn {
+        margin: 4rem 0;
+    }
+    .socials {
+        margin-top: 12rem;
+    }
+    .home__content .image img {
+        margin-top: -12rem;
+    }
+    .home__content span {
+        align-items: center;
+        justify-content: center;
     }
 
     .certificate__container, .experience__container {
