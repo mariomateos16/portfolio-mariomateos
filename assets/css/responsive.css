@@ -346,13 +346,19 @@
 @media only screen and (max-width: 450px) {
     .home__h1{
         font-size: 2.3rem;
+        margin-top: 1rem;
+    }
+
+    .home__span {
+        font-size: 4rem;
     }
 
     .home__content .btn {
-        margin: 4rem 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     .socials {
-        margin-top: 12rem;
+        margin-top: 1rem;
     }
     .home__content .image img {
         margin-top: -12rem;
