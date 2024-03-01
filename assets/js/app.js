@@ -51,7 +51,7 @@
     });
 
     var typed = new Typed(".typing-text", {
-      strings: ["Desarrollador Frontend", "Diseñador Web", "Desarrollador Aplicaciones Web"],
+      strings: ["Desarrollador Frontend", "Diseñador Web", "Desarrollador Aplicaciones Web", "Desarrollador Fullstack"],
       loop: true,
       typeSpeed: 50,
       backSpeed: 25,
