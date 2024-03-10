@@ -58,29 +58,6 @@
       backDelay: 500,
   });
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var miCard = document.querySelector('.projects__box');
-    var textoOculto = miCard.querySelector('.project__layer');
-  
-    // Evento táctil para dispositivos móviles
-    miCard.addEventListener('touchstart', function () {
-      // Toggle de la visibilidad del texto
-      textoOculto.style.display = (textoOculto.style.display === 'none' || textoOculto.style.display === '') ? 'block' : 'none';
-    });
-  
-    // Evento hover para escritorio
-    miCard.addEventListener('mouseover', function () {
-      textoOculto.style.display = 'block';
-    });
-  
-    // Evento de salida del hover para escritorio
-    miCard.addEventListener('mouseout', function () {
-      textoOculto.style.display = 'none';
-    });
-  });
-
-    
-
 particlesJS(
   {
     "particles": {
